@@ -1,0 +1,20 @@
+{
+  "name": "debughttpclient",
+  "version": "1.0.0",
+  "description": "Simple nodejs http server dumping http request",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petitchevalroux/debughttpclient.git"
+  },
+  "author": "Patrick Poulain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petitchevalroux/debughttpclient/issues"
+  },
+  "homepage": "https://github.com/petitchevalroux/debughttpclient#readme"
+}
