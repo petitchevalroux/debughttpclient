@@ -6,7 +6,8 @@ function logRequest(request, prefix) {
         "headers": request.headers,
         "httpVersion": request.httpVersion,
         "method": request.method,
-        "url": request.url
+        "url": request.url,
+        "remoteAddress": request.socket.remoteAddress
     }));
 };
 
@@ -21,9 +22,11 @@ function logConnections() {
 }
 
 server = http.createServer(function(request, response) {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World\n");
-    logRequest(request, '');
+    setTimeout(function() {
+            response.writeHead(200, {"Content-Type": "text/plain"});
+            response.end("Hello World\n");
+    }, 1000);
+    logRequest(request);
 }).listen(8080, "127.0.0.1");
 
 server.on('connection', function (socket) {
