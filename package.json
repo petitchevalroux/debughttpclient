@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/petitchevalroux/debughttpclient/issues"
   },
-  "homepage": "https://github.com/petitchevalroux/debughttpclient#readme"
+  "homepage": "https://github.com/petitchevalroux/debughttpclient#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
 }
