@@ -1,5 +1,5 @@
 {
-  "name": "debughttpclient",
+  "name": "@petitchevalroux/debug-http-client",
   "version": "1.0.0",
   "description": "Simple nodejs http server dumping http request",
   "main": "src/index.js",
@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/petitchevalroux/debughttpclient#readme",
   "dependencies": {
-    "minimist": "^1.2.0",
     "yargs": "^14.0.0"
+  },
+  "bin": {
+    "debug-http-client": "./src/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
