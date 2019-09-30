@@ -1,6 +1,6 @@
 {
   "name": "@petitchevalroux/debug-http-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple nodejs http server dumping http request",
   "main": "src/index.js",
   "scripts": {
